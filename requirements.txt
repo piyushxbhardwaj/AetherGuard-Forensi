@@ -7,7 +7,7 @@ transformers
 accelerate
 facenet-pytorch
 opencv-python-headless
-Pillow==10.3.0
+Pillow
 numpy
 pandas
 requests

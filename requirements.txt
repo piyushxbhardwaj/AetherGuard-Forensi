@@ -1,13 +1,13 @@
 fastapi
 uvicorn
 python-multipart
-torch
-torchvision
+torch==2.3.1
+torchvision==0.18.1
 transformers
 accelerate
 facenet-pytorch
 opencv-python-headless
-Pillow
+Pillow==10.3.0
 numpy
 pandas
 requests

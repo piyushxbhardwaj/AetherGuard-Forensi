@@ -22,6 +22,14 @@ from models.model import load_hf_model
 from utils.inference import InferenceEngine
 
 app = FastAPI(title="Deepfake Detection API (Hugging Face Transformers)")
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "message": "AetherGuard API running",
+        "docs": "/docs",
+        "health": "/api/health"
+    }
 
 # Global Exception Handlers
 from fastapi.exceptions import RequestValidationError
